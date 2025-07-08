@@ -1,0 +1,362 @@
+/* Crete Page Specific Styles */
+
+/* Hero Section for Crete */
+.crete-hero {
+    position: relative;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-top: 80px;
+}
+
+.crete-hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.crete-hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.crete-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        135deg,
+        rgba(0, 123, 199, 0.6) 0%,
+        rgba(27, 54, 93, 0.7) 100%
+    );
+    z-index: -1;
+}
+
+.crete-hero-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+    color: var(--white);
+}
+
+.crete-title {
+    font-family: var(--font-heading);
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.4);
+    letter-spacing: 0.1em;
+    animation: fadeInUp 1s ease-out;
+}
+
+.crete-subtitle {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--light-blue);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    animation: fadeInUp 1s ease-out 0.2s both;
+}
+
+/* Main Container */
+.crete-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    box-sizing: border-box;
+}
+
+
+
+
+
+/* Main Article */
+.crete-main {
+    background: var(--white);
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-light);
+    overflow: hidden;
+    width: 100%;
+    max-width: none;
+}
+
+/* Author Info */
+.author-info {
+    background: var(--navy-blue);
+    color: var(--white);
+    padding: 25px 30px;
+    border-bottom: 3px solid var(--azure-blue);
+}
+
+.author-info p {
+    margin: 0 0 10px 0;
+    font-size: 1rem;
+}
+
+.author-info p:last-child {
+    margin-bottom: 0;
+}
+
+.author-bio {
+    font-size: 0.9rem !important;
+    opacity: 0.85;
+    font-style: italic;
+    font-weight: 300;
+}
+
+/* Article Content */
+.article-content {
+    padding: 40px 30px;
+    font-family: 'Crimson Text', 'Georgia', 'Times New Roman', serif;
+    line-height: 1.7;
+    color: #333;
+}
+
+.intro-text {
+    font-size: 1.3rem;
+    font-weight: 400;
+    line-height: 1.7;
+    color: var(--navy-blue);
+    margin-bottom: 30px;
+    padding: 25px;
+    background: linear-gradient(135deg, rgba(79, 195, 247, 0.1), rgba(135, 206, 235, 0.1));
+    border-left: 4px solid var(--azure-blue);
+    border-radius: 0 8px 8px 0;
+    font-style: italic;
+}
+
+.article-content h2 {
+    font-family: var(--font-heading);
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: var(--navy-blue);
+    margin: 40px 0 20px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--azure-blue);
+}
+
+.article-content h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: var(--azure-blue);
+    margin: 30px 0 15px 0;
+}
+
+.article-content h4 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--navy-blue);
+    margin: 25px 0 10px 0;
+}
+
+.article-content p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    text-align: justify;
+}
+
+.article-content strong {
+    color: var(--azure-blue);
+    font-weight: 600;
+}
+
+.article-content em {
+    color: var(--navy-blue);
+    font-style: italic;
+}
+
+/* Images */
+.article-image {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin: 30px 0;
+    box-shadow: var(--shadow-medium);
+}
+
+.article-image-small {
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: var(--border-radius);
+    margin: 20px auto;
+    display: block;
+    box-shadow: var(--shadow-medium);
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Blockquote */
+blockquote {
+    background: linear-gradient(135deg, var(--soft-blue), rgba(135, 206, 235, 0.3));
+    border-left: 5px solid var(--azure-blue);
+    margin: 30px 0;
+    padding: 20px 25px;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: var(--navy-blue);
+    border-radius: 0 8px 8px 0;
+}
+
+blockquote p {
+    margin: 0;
+}
+
+/* Lists */
+.experience-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.experience-list li {
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    background: var(--soft-blue);
+    border-left: 4px solid var(--azure-blue);
+    border-radius: 0 8px 8px 0;
+    transition: all 0.3s ease;
+}
+
+.experience-list li:hover {
+    background: rgba(79, 195, 247, 0.15);
+    transform: translateX(5px);
+}
+
+.experience-list li strong {
+    color: var(--navy-blue);
+}
+
+/* Itinerary */
+.itinerary {
+    margin: 30px 0;
+    display: grid;
+    gap: 20px;
+}
+
+.day {
+    background: linear-gradient(135deg, var(--soft-blue), rgba(135, 206, 235, 0.2));
+    padding: 20px;
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--azure-blue);
+    transition: all 0.3s ease;
+}
+
+.day:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-medium);
+}
+
+.day h4 {
+    margin: 0 0 10px 0;
+    color: var(--navy-blue);
+    font-size: 1.2rem;
+}
+
+.day p {
+    margin: 0;
+    color: #555;
+}
+
+/* Conclusion */
+.conclusion {
+    background: linear-gradient(135deg, var(--navy-blue), var(--azure-blue));
+    color: var(--white);
+    padding: 30px;
+    border-radius: var(--border-radius);
+    margin: 40px 0 0 0;
+    text-align: center;
+}
+
+.conclusion h2 {
+    color: var(--white);
+    border-bottom: 2px solid var(--light-blue);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.conclusion p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .crete-container {
+        max-width: 100%;
+        padding: 20px 15px;
+    }
+    
+    .crete-main {
+        margin: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .crete-title {
+        font-size: 3.5rem;
+    }
+    
+    .crete-subtitle {
+        font-size: 1.2rem;
+    }
+    
+    .crete-container {
+        padding: 20px 15px;
+    }
+    
+    .article-content {
+        padding: 25px 20px;
+    }
+    
+    .article-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .article-image-small {
+        width: 100%;
+        float: none;
+        margin: 20px 0;
+    }
+    
+    .author-info {
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .crete-title {
+        font-size: 2.5rem;
+    }
+    
+    .crete-hero {
+        height: 50vh;
+    }
+    
+    .article-content {
+        padding: 20px 15px;
+    }
+    
+    .intro-text {
+        font-size: 1.1rem;
+        padding: 20px;
+    }
+    
+    .article-content p {
+        text-align: left;
+    }
+} 
